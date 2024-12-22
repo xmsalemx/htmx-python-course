@@ -51,7 +51,7 @@ if __name__ == '__main__':
     # Python 3.12 has a new way to determine this,
     # see https://github.com/talkpython/htmx-python-course/issues/8#issuecomment-1990894657
     being_debugged = sys.gettrace() is not None
-    being_debugged = being_debugged or sys.monitoring.get_tool(sys.monitoring.DEBUGGER_ID) is not None
+    # being_debugged = being_debugged or sys.monitoring.get_tool(sys.monitoring.DEBUGGER_ID) is not None
 
     app.run(debug=being_debugged)
 else:
